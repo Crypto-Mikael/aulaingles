@@ -1,0 +1,72 @@
+:root {
+  /* Step 1: Tell the browser the site supports both modes */
+  color-scheme: light dark;
+
+  /* Step 2: Define design tokens using light-dark(lightColor, darkColor) */
+  --bg-main: light-dark(#ffffff, #121212);
+  --text-main: light-dark(#333333, #f0f0f0);
+  --accent: light-dark(#0066cc, #99ccff);
+}
+
+body {
+  margin: 0;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  margin: 16px;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+h1, p {
+  margin: 0;
+}
+
+main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  width: 200px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#quiz-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 16px;
+}
+
+#result-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 16px;
+}

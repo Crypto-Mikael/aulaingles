@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abacate</title>
+    <link rel="stylesheet" href="styles.css"></link>
+  </head>
+  <body>
+    <main id="main-container">
+      <h1>Quiz de Inglês</h1>
+      <p>Bem-vindo ao nosso quiz de inglês!</p>
+      <button id="button-quiz">Iniciar Quiz</button>
+    </main>
+
+
+    <section id="quiz-container" style="display: none;">
+      <h1></h1>
+      <p id="question"></p>
+      <ul>
+        <li><button id="answer1"></button></li>
+        <li><button id="answer2"></button></li>
+        <li><button id="answer3"></button></li>
+        <li><button id="answer4"></button></li>
+      </ul>
+    </section>
+
+    <section  id="result-container" style="display: none;">
+      <h1>Resultado</h1>
+      <p id="result"></p>
+      <button id="restart-button">Reiniciar Quiz</button>
+    </section>
+
+  </body>
+  <script src="index.js"></script>
+</html>
